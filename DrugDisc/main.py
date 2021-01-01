@@ -22,4 +22,13 @@ print (csvfile.head)
 
 data = res_df[res_df.standard_value.notna()]
 
-//
+#####
+
+bioactivity_class = []
+for i in data.standard_value:
+    if float(i) >= 10000:
+        bioactivity_class.append("inactive")
+    elif float(i) <= 1000:
+        bioactivity_class.append("active")
+    else:
+        bioactivity_class.append("intermediate")
