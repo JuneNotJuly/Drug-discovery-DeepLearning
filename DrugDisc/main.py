@@ -32,3 +32,7 @@ for i in data.standard_value:
         bioactivity_class.append("active")
     else:
         bioactivity_class.append("intermediate")
+
+mol_cid = []
+for i in data.molecule_chembl_id:
+    mol_cid.append(i)
