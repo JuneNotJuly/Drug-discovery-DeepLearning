@@ -22,7 +22,7 @@ print (csvfile.head)
 
 data = res_df[res_df.standard_value.notna()]
 
-#####
+#########################################################################################
 
 bioactivity_class = []
 for i in data.standard_value:
@@ -36,3 +36,7 @@ for i in data.standard_value:
 mol_cid = []
 for i in data.molecule_chembl_id:
     mol_cid.append(i)
+
+canonical_smiles = []
+for i in data.canonical_smiles:
+    canonical_smiles.append(i)
