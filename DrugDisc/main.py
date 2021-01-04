@@ -40,3 +40,7 @@ for i in data.molecule_chembl_id:
 canonical_smiles = []
 for i in data.canonical_smiles:
     canonical_smiles.append(i)
+
+standard_value = []
+for i in data.standard_value:
+    standard_value.append(i)
